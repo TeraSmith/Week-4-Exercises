@@ -43,44 +43,15 @@ public class Card {
 
 		  return s;
 		 }
-		}
-	public class Deck
-{
-	  public static final int SIZE = 52;
-	  private Card[] deckOfCards; //Contains all 52 cards
-
-	  // Creates a normal Deck of 52 Cards
-	  public Deck()
-	  {
-	    deckOfCards = new Card[SIZE];
-	    int i=0;
-	    for(int suit=1;suit<=4;suit++)
-	    {
-	      for(int face=1;face<=13;face++)
-	      {
-	        deckOfCards[i++] = new Card(face,suit);
-	      }
-	    }
-	  }
-
-	  // Returns Deck of Cards
-	  public Card[] getDeckOfCards()
-	  {
-	    return deckOfCards;
-	  }
-
-	  // Shuffles a Deck of Cards randomly
+		}  
 	  public void shuffle()
 	  {
 	    Random generator = new Random();
-	    Card temp; // store a number temporarily
-	    int j; // random index to swap
+	    int j; // random index
 	    for(int i=0;i<SIZE;i++)
 	    {
 	      j = generator.nextInt(SIZE);
-	      temp = deckOfCards[i];
-	      deckOfCards[i] = deckOfCards[j];
-	      deckOfCards[j] = temp;
-	    }
+	      
+	    
 	  }
 	}
