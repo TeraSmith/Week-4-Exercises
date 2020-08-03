@@ -2,7 +2,7 @@
 public class Box {
 
 		
-		//declare instance variable
+	//declare variable
 	public int size = 0;
 	
 	//method printBox
@@ -16,13 +16,14 @@ public class Box {
 				
 	}
 
-	//next line 
+	
 	System.out.println();
 		}
 	
 	}
 	
-	public void printBox(char c) { //overloaded method added
+	public void printBox(char c) { 
+		//overloaded method 
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				System.out.print(c);
@@ -34,15 +35,15 @@ public class Box {
 	//main method
 	public static void main(String[] args)
 	{
-		//create object for box
+	//create object 
 	Box myBox = new Box();
 	//change size to 5
 	myBox.size =5;
 	
 	//invoke printBox method
 	myBox.printBox();
-	
-	myBox.printBox('b'); //invoke overload method
+	//overload method
+	myBox.printBox('b'); 
 
 }
 }
