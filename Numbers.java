@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Numbers {
 
 	
-		int max; {
+		int max; 
 		int arr;
 		
 		
@@ -20,15 +20,15 @@ public class Numbers {
 					max = arr[j];
 				}
 			}
-			//print required output
 			
+			//print output
 			System.out.print(arr[i] + ":" +max + " ");
 		}
 
 	}
 public static void main(String[] args) {
-	//sample run
 	
+	//sample run
 	int arr[] = {78,22,56,99,12,14,17,15,1,144,37,23,47,88,9,19};
 		
 	}
